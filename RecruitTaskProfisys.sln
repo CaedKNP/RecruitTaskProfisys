@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitTaskProfisys", "RecruitTaskProfisys\RecruitTaskProfisys.csproj", "{A37FC011-7F30-4EDA-8028-2647ECBABCE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A37FC011-7F30-4EDA-8028-2647ECBABCE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A37FC011-7F30-4EDA-8028-2647ECBABCE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A37FC011-7F30-4EDA-8028-2647ECBABCE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A37FC011-7F30-4EDA-8028-2647ECBABCE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0613A0F7-F145-4E60-8AFF-31B6676FB711}
+	EndGlobalSection
+EndGlobal
