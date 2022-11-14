@@ -30,7 +30,6 @@ namespace RecruitTaskProfisys
             connetionString = @"Data Source=" + _src + ";Initial Catalog=" + _db + ";User ID=" + _id + ";Password=" + _pswrd + ";";
             cnn = new SqlConnection(connetionString);
             cnn.Open();
-            //cnn.Close();
 
             //Data read
             Document d;
