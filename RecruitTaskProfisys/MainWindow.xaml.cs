@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Input;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Controls;
 
 namespace RecruitTaskProfisys
 {
@@ -183,6 +184,20 @@ namespace RecruitTaskProfisys
         {
             ReadCsv("DESKTOP-51BJ13O", "RTPS", "sa", "qwerty", "C:/Users/HP/Downloads/Zadanie/");
             DBLoad("DESKTOP-51BJ13O", "RTPS", "sa", "qwerty");
+        }
+
+        private void fNameInput_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            TextBox txt = sender as TextBox;
+            if(txt.Text != null)
+            {
+                List<Document> fDocs = documents.Where(x => x.LastName.ToLower().Contains(txt.Text.ToLower())).ToList();
+                docs.ItemsSource = null;
+                docs.ItemsSource = fDocs;
+            }else
+            {
+                docs.ItemsSource = documents;
+            }
         }
     }
 }

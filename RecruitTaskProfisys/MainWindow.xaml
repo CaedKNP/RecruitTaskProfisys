@@ -11,6 +11,10 @@
             <Menu DockPanel.Dock="Top">
                 <MenuItem x:Name="Import" Header="_Import" Click="Import_Click"/>
             </Menu>
+            <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+                <TextBlock Text="LastName"/>
+                <TextBox x:Name="fNameInput" TextChanged="fNameInput_TextChanged" Width="500px"/>
+            </StackPanel>
             <Grid>
                 <DataGrid x:Name="docs" ItemsSource="{Binding documents}" IsReadOnly="True"  AutoGenerateColumns="True">
                     <DataGrid.Resources>
